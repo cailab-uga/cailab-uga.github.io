@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:cailab-tamu.github.io)",
+      "WebFetch(domain:claude.ai)",
+      "Bash(cp \"C:/Users/jingc/Documents/GitHub/cailab-tamu.github.io/img/team/01c.jpg\" \"C:/Users/jingc/Documents/GitHub/cailab-uga.github.io/assets/img/team/jcai.jpg\")",
+      "Bash(cp \"C:/Users/jingc/Documents/GitHub/cailab-tamu.github.io/img/team/06.jpg\" \"C:/Users/jingc/Documents/GitHub/cailab-uga.github.io/assets/img/team/shreyan.jpg\")",
+      "Bash(cp \"C:/Users/jingc/Documents/GitHub/cailab-tamu.github.io/img/team/08.png\" \"C:/Users/jingc/Documents/GitHub/cailab-uga.github.io/assets/img/team/selim.png\")",
+      "Bash(cp \"C:/Users/jingc/Documents/GitHub/cailab-tamu.github.io/img/team/1742815367186.jpg\" \"C:/Users/jingc/Documents/GitHub/cailab-uga.github.io/assets/img/team/vignesh.jpg\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python -c \"from PIL import Image, ImageDraw, ImageFont; print\\('PIL available'\\)\")",
+      "Bash(curl -s https://raw.githubusercontent.com/cailab-tamu/cailab-tamu.github.io/main/index.html)",
+      "Bash(curl -s https://raw.githubusercontent.com/cailab-tamu/cailab-tamu.github.io/main/js/contact_me.js)"
+    ]
+  }
+}
