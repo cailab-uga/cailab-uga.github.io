@@ -10,7 +10,9 @@
       "Bash(python3 -c ' *)",
       "Bash(python -c \"from PIL import Image, ImageDraw, ImageFont; print\\('PIL available'\\)\")",
       "Bash(curl -s https://raw.githubusercontent.com/cailab-tamu/cailab-tamu.github.io/main/index.html)",
-      "Bash(curl -s https://raw.githubusercontent.com/cailab-tamu/cailab-tamu.github.io/main/js/contact_me.js)"
+      "Bash(curl -s https://raw.githubusercontent.com/cailab-tamu/cailab-tamu.github.io/main/js/contact_me.js)",
+      "Bash(curl -sI \"https://maps.app.goo.gl/pQjXFDaZ5doTJPTT8\")",
+      "Bash(awk '/<h3>Journal Articles<\\\\/h3>/,/<h3>Book Chapters<\\\\/h3>/')"
     ]
   }
 }
