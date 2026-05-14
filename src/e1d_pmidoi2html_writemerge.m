@@ -69,19 +69,9 @@ function updateIndexPublicationsSection(filename, selectedHtml)
     idxEnd = idxEnd + strlength(endMarker) - 1;
     newContent = string(content(1:idxStart-1)) + section + string(content(idxEnd+1:end));
 
-    if ~contains(newContent, '#publications ol.pub-list li.highlighted')
-        css = [
-"  <style>"
-"    #publications ol.pub-list li { margin-bottom: 14px; }"
-"    #publications ol.pub-list li.highlighted { background: #fff8f9; border-left: 4px solid #BA0C2F; padding: 8px 12px; border-radius: 0 4px 4px 0; list-style-position: outside; }"
-"  </style>"
-];
-        css = join(css, newline) + newline;
-        newContent = replace(newContent, "  <link href=""assets/css/style.css"" rel=""stylesheet"">" + newline, ...
-            "  <link href=""assets/css/style.css"" rel=""stylesheet"">" + newline + css);
-    end
+    % Pub-list styles now live in assets/css/style.css — no inline injection needed.
 
-    badgeScript = "  <script async src=""https://badge.dimensions.ai/badge.js"" charset=""utf-8""></script>";
+    badgeScript = "  <script defer src=""https://badge.dimensions.ai/badge.js"" charset=""utf-8""></script>";
     if ~contains(newContent, 'badge.dimensions.ai/badge.js')
         newContent = replace(newContent, "  <!-- Vendor JS Files -->" + newline, ...
             "  <!-- Vendor JS Files -->" + newline + badgeScript + newline);
@@ -152,7 +142,10 @@ function s = fullPageHeader()
 "  <meta content=""publications, single cell, RNA-seq, quantum computing, bioinformatics, UGA"" name=""keywords"">"
 "  <link href=""assets/img/favicon.png"" rel=""icon"">"
 "  <link href=""assets/img/apple-touch-icon.png"" rel=""apple-touch-icon"">"
-"  <link href=""https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"" rel=""stylesheet"">"
+"  <!-- Google Fonts -->"
+"  <link rel=""preconnect"" href=""https://fonts.googleapis.com"">"
+"  <link rel=""preconnect"" href=""https://fonts.gstatic.com"" crossorigin>"
+"  <link href=""https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Raleway:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"" rel=""stylesheet"">"
 "  <link href=""assets/vendor/aos/aos.css"" rel=""stylesheet"">"
 "  <link href=""assets/vendor/bootstrap/css/bootstrap.min.css"" rel=""stylesheet"">"
 "  <link href=""https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"" rel=""stylesheet"">"
@@ -160,19 +153,13 @@ function s = fullPageHeader()
 "  <link href=""assets/vendor/glightbox/css/glightbox.min.css"" rel=""stylesheet"">"
 "  <link href=""assets/vendor/swiper/swiper-bundle.min.css"" rel=""stylesheet"">"
 "  <link href=""assets/css/style.css"" rel=""stylesheet"">"
-"  <style>"
-"    .pub-section { padding: 40px 0 20px; }"
-"    .pub-section h3 { font-size: 1.4rem; font-weight: 700; color: #BA0C2F; border-bottom: 2px solid #BA0C2F; padding-bottom: 8px; margin-bottom: 20px; }"
-"    ol.pub-list { padding-left: 1.4rem; }"
-"    ol.pub-list li { margin-bottom: 14px; line-height: 1.65; font-size: 0.95rem; }"
-"    ol.pub-list li.highlighted { background: #fff8f9; border-left: 4px solid #BA0C2F; padding: 8px 12px; border-radius: 0 4px 4px 0; list-style-position: outside; }"
-"  </style>"
+"  <!-- Pub-list and pub-section styles are in assets/css/style.css -->"
 "</head>"
 "<body>"
 "  <section id=""topbar"" class=""d-flex align-items-center"">"
 "    <div class=""container d-flex justify-content-center justify-content-md-between"">"
 "      <div class=""contact-info d-flex align-items-center"">"
-"        <i class=""bi bi-envelope-fill""></i><a href=""mailto:jcai@uga.edu"">jcai@uga.edu</a>"
+"        <span class=""pulse""></span>Biochemistry &amp; Molecular Biology · Bioinformatics · UGA"
 "      </div>"
 "      <div class=""social-links d-none d-md-block"">"
 "        <a href=""https://x.com/jamescai"" class=""twitter"" target=""_blank""><i class=""bi bi-twitter-x""></i></a>"
@@ -184,7 +171,7 @@ function s = fullPageHeader()
 "  </section>"
 "  <header id=""header"" class=""d-flex align-items-center"">"
 "    <div class=""container d-flex align-items-center justify-content-between"">"
-"      <h1 class=""logo""><a href=""index.html"">Cai Lab</a></h1>"
+"      <h1 class=""logo""><a href=""index.html""><span style=""color:#BA0C2F;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;"">&lt;</span><span style=""font-family:Raleway,'Helvetica Neue',Arial,sans-serif;""> Cai Lab </span><span style=""color:#BA0C2F;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;"">/&gt;</span></a></h1>"
 "      <nav id=""navbar"" class=""navbar"">"
 "        <ul>"
 "          <li><a class=""nav-link"" href=""index.html#about"">About</a></li>"
@@ -283,14 +270,14 @@ function s = fullPageFooter()
 "  <a href=""#"" class=""back-to-top d-flex align-items-center justify-content-center""><i class=""bi bi-arrow-up-short""></i></a>"
 "  <div id=""preloader""></div>"
 ""
-"  <script async src=""https://badge.dimensions.ai/badge.js"" charset=""utf-8""></script>"
-"  <script src=""assets/vendor/aos/aos.js""></script>"
-"  <script src=""assets/vendor/bootstrap/js/bootstrap.bundle.min.js""></script>"
-"  <script src=""assets/vendor/glightbox/js/glightbox.min.js""></script>"
-"  <script src=""assets/vendor/isotope-layout/isotope.pkgd.min.js""></script>"
-"  <script src=""assets/vendor/swiper/swiper-bundle.min.js""></script>"
-"  <script src=""assets/vendor/php-email-form/validate.js""></script>"
-"  <script src=""assets/js/main.js""></script>"
+"  <script defer src=""https://badge.dimensions.ai/badge.js"" charset=""utf-8""></script>"
+"  <script defer src=""assets/vendor/aos/aos.js""></script>"
+"  <script defer src=""assets/vendor/bootstrap/js/bootstrap.bundle.min.js""></script>"
+"  <script defer src=""assets/vendor/glightbox/js/glightbox.min.js""></script>"
+"  <script defer src=""assets/vendor/isotope-layout/isotope.pkgd.min.js""></script>"
+"  <script defer src=""assets/vendor/swiper/swiper-bundle.min.js""></script>"
+"  <script defer src=""assets/vendor/php-email-form/validate.js""></script>"
+"  <script defer src=""assets/js/main.js""></script>"
 ""
 "</body>"
 "</html>"
