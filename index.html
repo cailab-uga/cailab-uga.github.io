@@ -31,12 +31,33 @@
     #publications ol.pub-list li.highlighted { background: #fff8f9; border-left: 4px solid #BA0C2F; padding: 8px 12px; border-radius: 0 4px 4px 0; list-style-position: outside; }
   </style>
 
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+
   <!-- =======================================================
   * Template Name: Day - v4.10.0
   * Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+<style>
+  .pulse {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #BA0C2F;
+    margin-right: 8px;
+    box-shadow: 0 0 0 0 rgba(186, 12, 47, 0.6);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 0 0   rgba(186, 12, 47, 0.55); }
+    70%  { box-shadow: 0 0 0 8px rgba(186, 12, 47, 0);    }
+    100% { box-shadow: 0 0 0 0   rgba(186, 12, 47, 0);    }
+  }
+</style>
+
 </head>
 
 <body>
@@ -45,7 +66,7 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        Biochemistry & Molecular Biology · Bioinformatics · UGA        
+        <span class="pulse"></span>Biochemistry & Molecular Biology · Bioinformatics · UGA        
       </div>
       <div class="social-links d-none d-md-block">
         <a href="https://x.com/jamescai" class="twitter" target="_blank"><i class="bi bi-twitter-x"></i></a>
@@ -60,7 +81,7 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html"><span style="color:#BA0C2F;font-family:monospace;">&lt;</span> CAI LAB <span style="color:#BA0C2F;font-family:monospace;">/&gt;</span></a></h1>
+      <h1 class="logo"><a href="index.html"><span style="color:#BA0C2F;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;">&lt;</span><span style="font-family:Raleway,'Helvetica Neue,Arial,sans-serif;"> Cai Lab </span><span style="color:#BA0C2F;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;">/&gt;</span></a></h1>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#about">About</a></li>
@@ -79,10 +100,24 @@
   <!-- ======= Hero Section ======= <h2>&lt; Single Cell Biology | Quantum Computing &gt;</h2> -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-      <span style="background-color:#BA0C2F;color:#191919;font-family:monospace;display:inline-block;padding:4px 8px;font-size: 20px">Cai Lab @ University of Georgia</span>
-      <h1 class="logo">Single cell biology entangled with quantum computation</h1>
-      
-      <a href="#about" class="btn-get-started scrollto">Discover Story</a>
+      <!-- <span style="background-color:#BA0C2F;color:#191919;font-family:monospace;display:inline-block;padding:4px 8px;font-size: 20px">Cai Lab @ University of Georgia</span> -->
+<p style="margin:0;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:20px;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.75);">
+  <span style="display:inline-block;width:24px;height:4px;background:#BA0C2F;vertical-align:middle;margin-right:8px;"></span><span style="vertical-align:middle;">Cai Lab @ UGA</span>
+</p>
+
+<!-- h1 class="logo">Single cell biology, entangled with quantum computation</h1 -->
+
+<h1 style="margin:0;font-family:Raleway,'Helvetica Neue',Arial,sans-serif;font-weight:600;font-size:48px;line-height:1.1;letter-spacing:-0.3px;color:#ffffff;">
+  Single cell biology,<br>learned with quantum tools.
+</h1>
+
+<p style="margin:0;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:20px;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.75);">
+  <span style="vertical-align:middle;">&lt; Single Cell Biology | Quantum Computing &gt;</span>
+</p>
+<br>
+  <p>      
+      <a href="#positions" class="btn-get-started scrollto">Join the Lab</a>
+  </p>
     </div>
   </section><!-- End Hero -->
 
