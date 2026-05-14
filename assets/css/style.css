@@ -1448,3 +1448,29 @@ section {
     margin: -20px 0 30px 0;
   }
 }
+/* ======= Publications ======= */
+#publications ol.pub-list li { margin-bottom: 14px; }
+#publications ol.pub-list li.highlighted { background: #fff8f9; border-left: 4px solid #BA0C2F; padding: 8px 12px; border-radius: 0 4px 4px 0; list-style-position: outside; }
+
+/* ======= Pulse indicator (topbar) ======= */
+.pulse {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #BA0C2F;
+  margin-right: 8px;
+  box-shadow: 0 0 0 0 rgba(186, 12, 47, 0.6);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0   rgba(186, 12, 47, 0.55); }
+  70%  { box-shadow: 0 0 0 8px rgba(186, 12, 47, 0);    }
+  100% { box-shadow: 0 0 0 0   rgba(186, 12, 47, 0);    }
+}
+
+/* ======= Publications page (publications.html) ======= */
+.pub-section { padding: 40px 0 20px; }
+.pub-section h3 { font-size: 1.4rem; font-weight: 700; color: #BA0C2F; border-bottom: 2px solid #BA0C2F; padding-bottom: 8px; margin-bottom: 20px; }
+ol.pub-list { padding-left: 1.4rem; }
+ol.pub-list li { line-height: 1.65; font-size: 0.95rem; }
