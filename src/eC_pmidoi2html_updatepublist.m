@@ -3,7 +3,7 @@ oldDir = pwd;
 cd(scriptDir);
 
 addpath(fullfile(scriptDir, 'pmidoi'));
-e0_pmidoilist;
+eB_pmidoilist;
 
 preprintHtml = in_loopthrough(AAv(ispreprint), Highlighted);
 journalHtml = in_loopthrough(AAv(~ispreprint), Highlighted);
@@ -14,7 +14,7 @@ writeFullPublicationsPage('../publications.html', preprintHtml, journalHtml);
 y = ismember(AAv, Highlighted);
 selectedHtml = in_loopthrough_simple(AAv(y), Highlighted);
 writeSelectedFragment('../selected_publications.html', selectedHtml);
-updateIndexPublicationsSection('../index.html', selectedHtml);
+updateIndexPublicationsSection('../uga2_index.html', selectedHtml);
 cd(oldDir);
 
 
