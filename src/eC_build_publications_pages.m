@@ -8,12 +8,12 @@ eB_load_paper_ids;
 preprintHtml = in_loopthrough(AAv(ispreprint), Highlighted);
 journalHtml = in_loopthrough(AAv(~ispreprint), Highlighted);
 
-writeFragment('publications.html', preprintHtml, journalHtml);
+writeFragment('complete_publications.html', preprintHtml, journalHtml);
 writeFullPublicationsPage('../publications.html', preprintHtml, journalHtml);
 
 y = ismember(AAv, Highlighted);
 selectedHtml = in_loopthrough_simple(AAv(y), Highlighted);
-writeSelectedFragment('../selected_publications.html', selectedHtml);
+writeSelectedFragment('selected_publications.html', selectedHtml);
 updateIndexPublicationsSection('../uga2_index.html', selectedHtml);
 cd(oldDir);
 
@@ -44,7 +44,16 @@ end
 
 function updateIndexPublicationsSection(filename, selectedHtml)
     if ~exist(filename, 'file')
-        return
+        [parentDir, ~, ~] = fileparts(filename);
+        if isempty(parentDir)
+            parentDir = '.';
+        end
+        seed = fullfile(parentDir, 'uga_index.html');
+        if ~exist(seed, 'file')
+            warning('Seed template %s not found; cannot create %s.', seed, filename);
+            return
+        end
+        copyfile(seed, filename);
     end
 
     content = fileread(filename);

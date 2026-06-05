@@ -15,7 +15,10 @@
       "Bash(awk '/<h3>Journal Articles<\\\\/h3>/,/<h3>Book Chapters<\\\\/h3>/')",
       "Bash(rm -f aaa_parse_au.m aaa_parse_au2.m add_date.m convert_date_string.m e3_pmid2authorlist.m e3_pmid2authorlist_new.m e4_pmid2chinalist.m authorlist.html index_template.html news.html news_aa.html selectpublications.html)",
       "Bash(rm -rf authorlist)",
-      "Bash(rm -f pmidoi/test_doi.m pmidoi/test_doi2.m pmidoi/test_py.py)"
+      "Bash(rm -f pmidoi/test_doi.m pmidoi/test_doi2.m pmidoi/test_py.py)",
+      "mcp__MATLAB__evaluate_matlab_code",
+      "mcp__MATLAB__check_matlab_code",
+      "Bash(git rm *)"
     ]
   }
 }
