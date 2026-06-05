@@ -1,4 +1,4 @@
-function [s]=i_doi2html(s_doi,ishighlighted)
+function [s]=fetch_doi_html(s_doi,ishighlighted)
 
 if nargin<2, ishighlighted=false; end
 
@@ -26,8 +26,8 @@ options = weboptions( ...
         s="<li>";
     end    
     
-    s_au = e_metacontentext(a,'citation_author');
-    [s_au] = e_authornamemod(s_au);
+    s_au = get_meta_content(a,'citation_author');
+    [s_au] = format_author_names(s_au);
     %s_au
     if length(s_au)==1
         s=sprintf("%s%s.\n",s,s_au);
@@ -37,14 +37,14 @@ options = weboptions( ...
         s=sprintf("%s%s.\n",s,sx);        
     end
 
-    s_ti=e_metacontentext(a,'citation_title');
+    s_ti=get_meta_content(a,'citation_title');
 
-    s_j=e_metacontentext(a,'citation_journal_abbrev');
+    s_j=get_meta_content(a,'citation_journal_abbrev');
     s_j=strrep(s_j,'.','');
     if isempty(s_j)
-       s_j=e_metacontentext(a,'citation_journal_title');
+       s_j=get_meta_content(a,'citation_journal_title');
        if isempty(s_j)
-           s_j=e_metacontentext(a,'citation_arxiv_id');
+           s_j=get_meta_content(a,'citation_arxiv_id');
            if ~isempty(s_j)
                s_j = "arXiv";
            end
@@ -52,21 +52,21 @@ options = weboptions( ...
     end
 
 
-    s_t=e_metacontentext(a,'citation_publication_date');
+    s_t=get_meta_content(a,'citation_publication_date');
     if isempty(s_t)
-        s_t=e_metacontentext(a,'citation_online_date');
+        s_t=get_meta_content(a,'citation_online_date');
         if isempty(s_t)
-            s_t=e_metacontentext(a,'citation_date');
+            s_t=get_meta_content(a,'citation_date');
         end
     end
 
-    s_v=e_metacontentext(a,'citation_volume');
-    s_i=e_metacontentext(a,'citation_issue');
+    s_v=get_meta_content(a,'citation_volume');
+    s_i=get_meta_content(a,'citation_issue');
     if isempty(s_i)
-        s_i=e_metacontentext(a,'citation_arxiv_id');
+        s_i=get_meta_content(a,'citation_arxiv_id');
     end
-    s_p1=e_metacontentext(a,'citation_firstpage');
-    s_p2=e_metacontentext(a,'citation_lastpage');
+    s_p1=get_meta_content(a,'citation_firstpage');
+    s_p2=get_meta_content(a,'citation_lastpage');
     
 
     s=sprintf("%s<strong>%s.</strong>\n",s,s_ti);
@@ -99,7 +99,7 @@ options = weboptions( ...
 end
 
 
-% function s=e_metacontentext(a,tag)
+% function s=get_meta_content(a,tag)
 %     s='';
 %     tag=sprintf('<meta name="%s" content="',tag);
 %     idx=find(contains(a,tag));

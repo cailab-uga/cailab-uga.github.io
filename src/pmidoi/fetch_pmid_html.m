@@ -1,4 +1,4 @@
-function [s]=i_pmid2html(pmid,ishighlighted)
+function [s]=fetch_pmid_html(pmid,ishighlighted)
 
 if nargin<2, ishighlighted=false; end
     options = weboptions('Timeout', 50);

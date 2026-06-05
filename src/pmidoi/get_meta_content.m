@@ -1,4 +1,4 @@
-function s = e_metacontentext(a,tag)
+function s = get_meta_content(a,tag)
     s='';
     tag=sprintf('<meta name="%s" content="',tag);
     idx=find(contains(a,tag));

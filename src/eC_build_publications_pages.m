@@ -3,7 +3,7 @@ oldDir = pwd;
 cd(scriptDir);
 
 addpath(fullfile(scriptDir, 'pmidoi'));
-eB_pmidoilist;
+eB_load_paper_ids;
 
 preprintHtml = in_loopthrough(AAv(ispreprint), Highlighted);
 journalHtml = in_loopthrough(AAv(~ispreprint), Highlighted);
@@ -310,9 +310,9 @@ function [s] = in_loopthrough_simple(AAv, Highlighted)
         else
             try
                 if contains(AAv(k), '/')
-                    s1 = i_doi2html(AAv(k), ismember(AAv(k), Highlighted));
+                    s1 = fetch_doi_html(AAv(k), ismember(AAv(k), Highlighted));
                 else
-                    s1 = i_pmid2html(AAv(k), ismember(AAv(k), Highlighted));
+                    s1 = fetch_pmid_html(AAv(k), ismember(AAv(k), Highlighted));
                 end
                 s1 = normalizePublicationHtml(s1);
                 writelines(s1, fname);
@@ -340,9 +340,9 @@ function [s] = in_loopthrough(AAv, Highlighted)
             pause(1)
             try
                 if contains(AAv(k), '/')
-                    s1 = i_doi2html(AAv(k), ishighlighted);
+                    s1 = fetch_doi_html(AAv(k), ishighlighted);
                 else
-                    s1 = i_pmid2html(AAv(k), ishighlighted);
+                    s1 = fetch_pmid_html(AAv(k), ishighlighted);
                 end
 
                 if hasAudio

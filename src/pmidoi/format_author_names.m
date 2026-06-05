@@ -1,4 +1,4 @@
-function [s_au]=e_authornamemod(s_au)
+function [s_au]=format_author_names(s_au)
 
     % "Romero, Selim"
     % "Gupta, Shreyan"
