@@ -1,0 +1,207 @@
+I've written this for the incoming UGA/BCMB lab rather than Texas A&M — swap it back if you'd rather recruit through A&M.
+
+---
+
+**PhD Position in Computational Single-Cell Biology and Quantum Computing**
+
+**Cai Lab — Department of Biochemistry and Molecular Biology, University of Georgia**
+
+The Cai Lab is seeking a motivated PhD student to join us starting [Fall 2027 / semester]. Our group develops computational methods at the intersection of single-cell genomics, gene regulatory network (GRN) inference, machine learning, and quantum computing. We build and maintain widely used open-source tools, including scGEAToolbox and the scTenifold family of methods.
+
+**Project areas** (to be shaped around the student's interests):
+- Tensor-network and quantum-inspired generative models for GRN inference
+- Machine learning for perturbation prediction and virtual knockout experiments from single-cell data
+- Agentic/LLM-based frameworks for automated hypothesis generation from public transcriptomic data
+- Method development for cell–cell communication and single-cell TWAS
+
+**We're looking for someone with:**
+- A BS or MS in computational biology, bioinformatics, computer science, electrical engineering, statistics, physics, or a related quantitative field
+- Solid programming ability (Python, R, MATLAB, or similar) and comfort working on the command line
+- Interest in biology; prior wet-lab experience is not required
+- Strong written and spoken communication in English
+
+**What we offer:** full stipend, tuition waiver, and health insurance through the [BCMB graduate program / Integrated Life Sciences program]; access to UGA's high-performance computing resources; and an interdisciplinary training environment with opportunities to publish and present internationally.
+
+**To apply:** send a CV, a short statement (1 page max) describing your research interests and why this lab, and contact information for two references to [email]. Informal inquiries are welcome. Formal admission is through the [program name] application, due [date] — please note your interest in the Cai Lab.
+
+UGA is an Equal Opportunity/Affirmative Action employer.
+
+---
+
+Two things worth deciding: whether to name the specific project areas (narrower but attracts better-matched applicants) and whether to state that international applicants are encouraged.
+
+
+
+
+=========
+
+# Ph.D. Position: AI and Quantum Computing for Single-Cell Biology
+
+**Fully funded Ph.D. position**
+**Cai Laboratory – Texas A&M University**
+
+The **Cai Laboratory** at **Texas A&M University** is recruiting an exceptional Ph.D. student to help build the next generation of computational methods for **single-cell biology**. We are seeking a student who is excited not only to apply existing tools, but to **invent fundamentally new algorithms** at the intersection of **artificial intelligence, machine learning, network science, and quantum computing**.
+
+This position is ideal for candidates who want to pursue high-impact, high-risk research that could redefine how cellular systems are modeled and analyzed.
+
+---
+
+## Vision
+
+Modern single-cell technologies can profile millions of cells, yet we still lack principled computational frameworks for understanding:
+
+* How stable cellular states emerge from gene regulatory networks
+* How cells transition between states during development and disease
+* How multi-omic information can be integrated into predictive models
+* How quantum-inspired and quantum-native algorithms might overcome current computational bottlenecks
+
+Our laboratory is developing new mathematical and computational foundations for these problems, including **AI-driven representation learning, graph neural networks, dynamical systems, causal network inference, and quantum machine learning approaches for single-cell data**.
+
+---
+
+## Research Areas
+
+The successful student may contribute to one or more of the following frontier projects:
+
+* Foundation models for single-cell and spatial omics
+* Generative models of cellular identity and cell-state dynamics
+* Gene regulatory network inference and attractor-state modeling
+* Causal discovery from perturbation and multi-omic data
+* Quantum kernels and quantum machine learning for high-dimensional biological data
+* QUBO/Ising formulations of biological inference problems
+* Scalable algorithms for atlases containing millions of cells
+* Open-source software platforms for the biomedical research community
+
+Applications span **cancer, cardiovascular disease, stroke, neuroscience, aging, and precision medicine**.
+
+---
+
+## What Makes This Position Unique
+
+This is not a routine bioinformatics position. The student will have the opportunity to:
+
+* Help define a new research direction in **quantum computational biology**
+* Publish methodological work in leading journals in computational biology, machine learning, and interdisciplinary science
+* Collaborate with researchers in biology, medicine, computer science, statistics, physics, and engineering
+* Gain experience in both theoretical algorithm development and large-scale biomedical data analysis
+* Present research at major international conferences in genomics, AI, and quantum information science
+
+Strong students will be encouraged to develop independent research programs early in their Ph.D. training.
+
+---
+
+## Desired Background
+
+We welcome applicants from diverse quantitative disciplines, including:
+
+* Computer Science
+* Computational Biology / Bioinformatics
+* Statistics / Data Science
+* Applied Mathematics
+* Physics
+* Electrical or Computer Engineering
+* Quantitative Biology
+
+Competitive applicants will demonstrate several of the following:
+
+* Outstanding academic record
+* Strong programming skills (Python, R, Julia, MATLAB, C++, or similar)
+* Interest in machine learning, optimization, algorithms, or quantum computing
+* Mathematical maturity and creativity
+* Evidence of research potential (publications, projects, software, competitions, or independent work)
+* Excellent written and verbal communication skills
+
+Prior experience in single-cell genomics is **not required**; exceptional candidates from computer science, mathematics, physics, or engineering are strongly encouraged to apply.
+
+---
+
+## Support and Environment
+
+The position includes:
+
+* Competitive stipend
+* Full tuition support
+* Health insurance
+* Access to high-performance computing and advanced computational resources
+* Travel support for conferences and workshops
+* A highly collaborative and interdisciplinary research environment at Texas A&M University
+
+---
+
+## Application Instructions
+
+Please send the following as a single PDF:
+
+1. Curriculum vitae
+2. Statement of research interests (1–2 pages) describing your scientific interests and why this position excites you
+3. Unofficial transcripts
+4. Contact information for three references
+5. (Optional) GitHub, personal webpage, preprints, publications, or code repositories
+
+Applications will be reviewed on a rolling basis until the position is filled. Outstanding applicants are encouraged to apply as early as possible.
+
+---
+
+## Contact
+
+**James J. Cai, Ph.D.**
+Professor, Department of Veterinary Integrative Biosciences
+Texas A&M University
+
+In your email, please include a brief description of your quantitative background, programming experience, and research interests.
+
+---
+
+**Join us to help create the computational foundations of the next era of single-cell and quantum-enabled biology.**
+
+
+
+==================
+
+🚀 **Fully Funded Ph.D. Opportunity at Texas A&M University**
+
+Are you excited about developing the next generation of algorithms for biology?
+
+My lab at **Texas A&M University** is recruiting a **fully funded Ph.D. student** to work at the intersection of:
+
+🧬 Single-cell genomics & spatial transcriptomics
+🤖 Artificial intelligence & machine learning
+🕸️ Gene regulatory networks & systems biology
+⚛️ Quantum computing & quantum machine learning
+
+Our goal is not simply to apply existing methods—we aim to **invent fundamentally new computational approaches** for understanding cellular identity, gene regulation, and disease using large-scale single-cell and multi-omics data.
+
+Projects may include:
+
+* Foundation models for single-cell biology
+* AI for biological discovery
+* Gene regulatory network inference
+* Causal learning from multi-omics data
+* Quantum algorithms for computational biology
+* Scalable methods for analyzing millions of cells
+
+We welcome applicants from a wide range of quantitative backgrounds, including:
+
+* Computer Science
+* Computational Biology / Bioinformatics
+* Statistics & Data Science
+* Applied Mathematics
+* Physics
+* Electrical & Computer Engineering
+
+Prior experience in single-cell genomics is **not required**. Strong candidates with interests in algorithms, machine learning, optimization, or quantum computing are especially encouraged to apply.
+
+The position includes:
+✅ Competitive stipend
+✅ Full tuition support
+✅ Health insurance
+✅ Access to advanced computing resources
+✅ Opportunities to publish in leading journals and present at international conferences
+
+If you are passionate about tackling challenging problems at the interface of computation and biology, I'd love to hear from you.
+
+📧 To apply, please email me your CV, a brief statement of research interests, unofficial transcripts, and contact information for three references.
+
+Please feel free to **share this post** with students or colleagues who may be interested.
+
+#PhD #PhDPosition #ComputationalBiology #SingleCell #Bioinformatics #ArtificialIntelligence #MachineLearning #QuantumComputing #SystemsBiology #Genomics #TexasAM #Research #GraduateSchool
