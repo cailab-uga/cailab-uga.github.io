@@ -2,7 +2,7 @@
 Dr. Cai gives a talk titled "Quantum Computing for Single-Cell Biology: Networks, Dynamics, and Generative Models" at the <a href="https://icibm2026.iaibm.org/">ICIBM 2026</a> in Buffalo, NY.
 
 06/12/2026
-Dr. Cai and co-PIs (Drs. Chapkin, Xiangyang Zhang) receive the RAISE AI Bridge Program award supported by the Texas A&M Institute of Data Science and Division of Research for developing "GEOcellar: an AI agent system for hypothesis generation and iterative analysis of single-cell RNA-seq data."
+Dr. Cai and co-PIs (Drs. Chapkin, Xiangyang Zhang) receive the <a href="https://tamids.tamu.edu/2026/01/12/raise-ai-bridge-texas-am/">RAISE AI Bridge Program award</a> supported by the Texas A&M Institute of Data Science and Division of Research for developing "GEOcellar: an AI agent system for hypothesis generation and iterative analysis of single-cell RNA-seq data."
 
 04/13/2026
 Shreyan receives the Dr. James E. Womack Award for the 2025–2026 academic year.
@@ -17,7 +17,7 @@ Dr. Cai receives 2026 <a href="https://vetmed.tamu.edu/news/internal-news/vmbs-h
 Dr. Cai gives guest lecture for ECEN 333 (At the Interface of Engineering and Life Sciences, organized by Dr. Raffaella Righetti) on "<a href="https://youtu.be/B7XMOWHhZYk">Single-Cell Transcriptomic Sequencing Data Analytics, Technologies and Applications</a>," in ETB 1020 at 2:20 PM (the class runs from 2:20–3:35 PM).
 
 02/11/2026
-Dr. Cai and co-PIs (Drs. Chapkin, Ning and Chu) receive the Texas A&M University Targeted Proposal Teams (TPT) award ($70,000; April 2026 – March 2027) by the Office of the Vice President for Research for developing "Quantum Algorithms and Agentic AI Systems for High-Performance Analysis of Single-Cell Omics Data."
+Dr. Cai and co-PIs (Drs. Chapkin, Ning and Chu) receive the Texas A&M University <a href="https://research.tamu.edu/funding/targeted-proposal-teams/proposal-planning-grants/">Targeted Proposal Teams (TPT)</a> award ($70,000; April 2026 – March 2027) by the Office of the Vice President for Research for developing "Quantum Algorithms and Agentic AI Systems for High-Performance Analysis of Single-Cell Omics Data."
 
 02/11/2026
 Shreyan receives the Advanced Training Grant ($1,500) by the VMBS Office of Research and Graduate Studies for travel to the Gordan Research Conference.
