@@ -7,10 +7,21 @@ options = weboptions( ...
     'UserAgent','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36', ...
     'Timeout',30);
 
-     a=webread(sprintf('https://doi.org/%s',s_doi), options);
-     a=strtrim(strsplit(a,{'\n','/>'}))';
-     a(strlength(a)==0)=[];
-     a=a(contains(a, "<meta "));
+    % Scrape the publisher landing page for citation_* meta tags. Some
+    % publishers (e.g. pubs.aip.org) block non-browser clients with HTTP 403,
+    % and others serve a page with no usable meta tags -- fall back to the
+    % Crossref REST API, which returns the same fields for any registered DOI.
+    try
+        a=webread(sprintf('https://doi.org/%s',s_doi), options);
+        a=strtrim(strsplit(a,{'\n','/>'}))';
+        a(strlength(a)==0)=[];
+        a=a(contains(a, "<meta "));
+    catch
+        a = {};
+    end
+    if isempty(a) || ~any(contains(a,'<meta name="citation_title" content="'))
+        a = fetch_crossref_meta(s_doi);
+    end
         % a{contains(a,'<meta name="citation_author" content="')}
         % a{contains(a,'<meta name="citation_journal_title" content="')}
         % a{contains(a,'<meta name="citation_journal_abbrev" content="')}
