@@ -21,7 +21,14 @@
       "Bash(git rm *)",
       "Bash(ls -la /d/GitHub_D/cailab-tamu.github.io/src 2>/dev/null | head -50 || echo \"PATH NOT FOUND\")",
       "Bash(echo \"=== rc=$? ===\")",
-      "mcp__matlab__check_matlab_code"
+      "mcp__matlab__check_matlab_code",
+      "Bash(python -c ' *)",
+      "Bash(git mv *)",
+      "Bash(mv PHD_POSITION.html phd-position.html)",
+      "Read(//c/Program Files/Google/Chrome/Application/**)",
+      "Read(//c/Program Files \\\\\\(x86\\\\\\)/Google/Chrome/Application/**)",
+      "Bash(python build_card.py)",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=1024,576 --screenshot=cai-phd-card.png \"card.html\")"
     ]
   }
 }
