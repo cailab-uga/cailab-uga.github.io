@@ -1,0 +1,21 @@
+I am recruiting a Ph.D. student to join the Cai Lab at the University of Georgia, where our group relocates in fall 2026.
+
+The work sits at the intersection of single-cell genomics, machine learning, and quantum computing. Our goal is not to apply existing methods — it is to invent fundamentally new computational approaches for understanding cellular identity, gene regulation, and disease from large-scale single-cell and multi-omics data.
+
+The Ph.D. will span the full methods-development workflow: algorithm design, implementation, benchmarking at the scale of millions of cells, and application to real disease datasets.
+
+Research directions:
+- Foundation models for single-cell biology
+- Gene regulatory network inference
+- Causal learning from multi-omics data
+- Quantum algorithms for computational biology
+- Scalable methods for analyzing millions of cells
+
+I am particularly interested in candidates who are strong in algorithms, machine learning, optimization, or quantum computing and who are curious about biology. Applicants from computer science, computational biology and bioinformatics, statistics and data science, applied mathematics, physics, and electrical and computer engineering are all welcome — prior experience in single-cell genomics is not required.
+
+Full details and how to apply:
+https://cailab-uga.github.io/phd-position-single-cell-ai-quantum.html
+
+Please feel free to share with students or colleagues who may be interested.
+
+#PhD #PhDPosition #ComputationalBiology #SingleCell #Bioinformatics #ArtificialIntelligence #MachineLearning #QuantumComputing #SystemsBiology #Genomics #Research #GraduateSchool
