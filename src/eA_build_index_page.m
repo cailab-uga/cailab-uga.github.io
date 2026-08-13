@@ -52,7 +52,7 @@ C0=[C0(1:i2-1); C2; C0(i2+1:end)];
 %i3=find(strcmp('<<<3>>>',C0));
 %C0=[C0(1:i3-1); C3; C0(i3+1:end)];
 
-writecell(C0,'../uga_index.html','FileType','text','QuoteStrings','none');
+writecell(C0,'../index.html','FileType','text','QuoteStrings','none');
 
 
 function C=i_readtxt(filename)

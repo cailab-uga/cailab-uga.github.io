@@ -14,7 +14,7 @@ writeFullPublicationsPage('../publications.html', preprintHtml, journalHtml);
 y = ismember(AAv, Highlighted);
 selectedHtml = in_loopthrough_simple(AAv(y), Highlighted);
 writeSelectedFragment('selected_publications.html', selectedHtml);
-updateIndexPublicationsSection('../uga2_index.html', selectedHtml);
+updateIndexPublicationsSection('../index.html', selectedHtml);
 cd(oldDir);
 
 
