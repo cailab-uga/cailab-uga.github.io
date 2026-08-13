@@ -313,7 +313,7 @@ function [s] = in_loopthrough_simple(AAv, Highlighted)
     for k = 1:length(AAv)
         fname = fullfile("paperhtml", matlab.lang.makeValidName(AAv(k)));
 
-        if exist(fname, "file")
+        if exist(fname, "file") && ~isStubCache(fname)
             fileContent = fileread(fname);
             s = s + normalizePublicationHtml(string(fileContent));
         else
@@ -345,7 +345,7 @@ function [s] = in_loopthrough(AAv, Highlighted)
         ishighlighted = ismember(AAv(k), Highlighted);
         hasAudio = exist(sprintf('../wav/%s.wav', wavefilev(k)), 'file');
 
-        if ishighlighted || ~exist(fname, "file") || hasAudio
+        if ishighlighted || ~exist(fname, "file") || hasAudio || isStubCache(fname)
             pause(1)
             try
                 if contains(AAv(k), '/')
@@ -394,6 +394,16 @@ function s = normalizePublicationHtml(s)
     s = replace(s, "</a>.<span class=""__dimensions_badge_embed__""", "</a><span class=""__dimensions_badge_embed__""");
     s = regexprep(s, '</span>\.\s*PMID:', '</span> PMID:');
     s = regexprep(s, '</span>\.</li>', '</span></li>');
+end
+
+
+function tf = isStubCache(fname)
+% True for a cached "Metadata unavailable" placeholder left by an earlier
+% failed fetch. Treated as a cache miss so the entry is retried rather than
+% pinned forever -- otherwise a single transient outage is permanent.
+    tf = false;
+    if ~exist(fname, "file"), return; end
+    tf = contains(string(fileread(fname)), "Metadata unavailable");
 end
 
 
