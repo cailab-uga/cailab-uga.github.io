@@ -18,7 +18,10 @@
       "Bash(rm -f pmidoi/test_doi.m pmidoi/test_doi2.m pmidoi/test_py.py)",
       "mcp__MATLAB__evaluate_matlab_code",
       "mcp__MATLAB__check_matlab_code",
-      "Bash(git rm *)"
+      "Bash(git rm *)",
+      "Bash(ls -la /d/GitHub_D/cailab-tamu.github.io/src 2>/dev/null | head -50 || echo \"PATH NOT FOUND\")",
+      "Bash(echo \"=== rc=$? ===\")",
+      "mcp__matlab__check_matlab_code"
     ]
   }
 }
