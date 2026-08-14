@@ -48,7 +48,7 @@ function updateIndexPublicationsSection(filename, selectedHtml)
         if isempty(parentDir)
             parentDir = '.';
         end
-        seed = fullfile(parentDir, 'uga_index.html');
+        seed = fullfile(parentDir, 'index.html');
         if ~exist(seed, 'file')
             warning('Seed template %s not found; cannot create %s.', seed, filename);
             return
