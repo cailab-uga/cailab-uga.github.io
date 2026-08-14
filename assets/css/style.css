@@ -1450,7 +1450,10 @@ section {
 }
 /* ======= Publications ======= */
 #publications ol.pub-list li { margin-bottom: 14px; }
-#publications ol.pub-list li.highlighted { background: #fff8f9; border-left: 4px solid #BA0C2F; padding: 8px 12px; border-radius: 0 4px 4px 0; list-style-position: outside; }
+
+/* The generator marks selected papers .highlighted on both pages, but the home
+   page list contains only selected papers — highlight them on the full list. */
+.pub-section ol.pub-list li.highlighted { background: #fff8f9; border-left: 4px solid #BA0C2F; padding: 8px 12px; border-radius: 0 4px 4px 0; list-style-position: outside; margin-bottom: 14px; }
 
 /* ======= Pulse indicator (topbar) ======= */
 .pulse {
