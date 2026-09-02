@@ -26,3 +26,6 @@ Manifest.toml
 # Audio is hosted on the TAMU site; keep local copies for the build
 # script's hasAudio check, but do not commit them.
 wav/
+
+# Per-machine Claude Code settings; not for publication
+.claude/
