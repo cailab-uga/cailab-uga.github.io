@@ -1,0 +1,24 @@
+【招生】佐治亚大学 Cai Lab 招收博士研究生
+
+Cai Lab（James Cai 教授，George E. and Sarah F. Peters Mudter Professor）即将整体迁至美国佐治亚大学（University of Georgia），隶属生物化学与分子生物学系（BMB）及生物信息学研究所（IOB），现招收博士研究生。
+
+我们不只是应用现有方法，而是发明新算法，研究细胞身份、基因调控与疾病。
+
+🔬 研究方向
+
+单细胞生物学基础模型（Foundation models）
+基因调控网络推断与因果学习
+面向计算生物学的量子算法
+百万级细胞的可扩展计算方法
+
+🎓 申请要求
+
+欢迎任何定量背景：计算机、统计、应用数学、物理、电子与计算机工程等
+不要求具备单细胞研究经验
+
+📩 了解详情与申请
+
+实验室主页：cailab-uga.github.io
+邮箱：jcai@uga.edu
+
+欢迎转发给对 AI + 生命科学感兴趣的同学！
