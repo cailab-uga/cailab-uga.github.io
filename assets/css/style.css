@@ -735,9 +735,15 @@ section {
   background: #e82d2d;
 }
 
+.services .icon-box:hover h4,
 .services .icon-box:hover h4 a,
-.services .icon-box:hover p {
+.services .icon-box:hover p,
+.services .icon-box:hover p a {
   color: #fff;
+}
+
+.services .icon-box:hover p a {
+  text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
